@@ -14,40 +14,22 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
     class Program
     {
         public static Logger Log { get; set; }
-        private static Dictionary<string, string> exportTableNames = new Dictionary<string, string>
-        {
 
-           { "employees",       "tblEmployees"  },
-           { "clients",         "tblClients"    },
-           { "appointments",    "tblTicketsRow" }
-
-        };
-
-        static void Main(FileInfo file, DirectoryInfo logDirectory = null, DirectoryInfo outputDirectory = null, LogEventLevel logLevel = LogEventLevel.Information)
+        static void Main(FileInfo file, DirectoryInfo logDirectory = null, DirectoryInfo outputDirectory = null, LogEventLevel logLevel = LogEventLevel.Information, bool summary = false)
         {
             //Set default file location 
             file ??= new FileInfo("./data.xml");
+            logDirectory ??= new DirectoryInfo("./logs");
 
             #region Configure Logger
             Log = Configuration.SerilogAdapter.GetLogger(logLevel, logDirectory);
-            outputDirectory = outputDirectory ?? new DirectoryInfo("./output");
-            DirectoryInfo outputPath = null;
-            if (!outputDirectory.Exists)
-            {
-                Log.Verbose($"output directory {outputDirectory.FullName} does not exist, creating...");
-                outputDirectory.Create();
-                Log.Verbose($"done.");
 
-            }
             #endregion
-
             #region Load DataSet
-            string dir = $"export_{ DateTime.Now.ToString("MMddyyyy_hh_mm_ss")}";
-            outputPath = outputDirectory.CreateSubdirectory(dir);
-            Log.Verbose($"Created output directory {outputPath.FullName}");
+
             if (!file.Exists)
             {
-                Log.Fatal($"{file.FullName} could not be found");
+                Log.Error($"{file.FullName} could not be found");
                 Environment.Exit(1);
             }
             var dataSet = new DataSet();
@@ -56,11 +38,10 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
             {
                 Log.Information($"Loading Dataset");
                 //Read Inkbook Backup File into DataSet 
+
+                Log.Verbose($"Loading dataset file {file.FullName}");
                 dataSet.ReadXml(file.FullName);
                 Log.Information($"Loaded {dataSet.Tables.Count} Tables from DataSet");
-
-                
-
 
                 foreach (DataTable table in dataSet.Tables)
                 {
@@ -71,45 +52,70 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
             }
             catch (Exception e)
             {
-                Log.Fatal($"{e.Message}");
-                if (logLevel >= LogEventLevel.Verbose)
-                    Log.Error(e.StackTrace);
+                Log.Error($"{e.Message}");
+                Log.Verbose(e.StackTrace);
+                
                 Environment.Exit(1);
             }
             #endregion
-
             #region Get Employee
             Console.WriteLine();
-            DataTable employeeTable = dataSet.Tables[exportTableNames["employees"]];
+            DataTable employeeTable = dataSet.Tables["tblEmployees"];
             foreach (DataRow emp in employeeTable.AsEnumerable())
             {
                 Log.Information($"{emp.Field<int>("fldEmployeeID")}: {emp.Field<string>("fldFirstName")} {emp.Field<string>("fldLastName")} ");
             }
 
-            Console.Write("Enter Employee ID to Export: ");
+            Log.Information("Enter Employee ID to Export: ");
             Console.WriteLine();
+
+            string input = Console.ReadLine().Trim();
+
+
+            var valid = int.TryParse(input, out var employeeId);
+
+            if (!valid)
+            {
+                Log.Error($"Invalid Entry {input}");
+                Environment.Exit(1);
+            }
             
+            Log.Verbose($"User entered :{employeeId}");
 
-            var employeeId = Console.ReadLine().Trim();
 
-            var employeeRecord = employeeTable.AsEnumerable().Where(q => q.Field<string>("fldEmployeeID") == employeeId);
+            var employeeRecord = employeeTable.AsEnumerable().Where(q => q.Field<int>("fldEmployeeID") == employeeId).FirstOrDefault();
 
-            if (null == employeeId )
+            if (null == employeeRecord)
             {
                 Log.Fatal($"Employee ID {employeeId } not found");
                 Environment.Exit(1);
             }
-            #endregion
 
+
+
+            #endregion
+            #region Collect Export Data 
             var exportTables = new Dictionary<string, DataTable>();
 
-            var appointments  = dataSet.Tables["tblTicketsRow"].AsEnumerable().Where( q=> q.Field<int>("fldEmployeeID") == int.Parse(employeeId)).CopyToDataTable();
-                                appointments.TableName = "tblTicketsRow";
+            var appointments = dataSet.Tables["tblTicketsRow"].AsEnumerable().Where(q => q.Field<int>("fldEmployeeID") == employeeId);
+            if (!appointments.Any())
+            {
+                Log.Error($"No Appointments for Employee {employeeId}. Nothing to export");
+                Environment.Exit(1);
+            }
+
+            var apptTable = appointments?.CopyToDataTable();
+
+            apptTable.TableName = "tblTicketsRow";
+
+            //refernce table to connect appointments to clients
             var appointmentSummaries = dataSet.Tables["tblTicketsSummary"];
+
+            //clients table ,  this will be filtered after we assemble the referece data from 
             var allClients = dataSet.Tables["tblClients"].AsEnumerable();
 
             var filterClients = appointments.AsEnumerable()
-                .Where(appointment => appointment.Field<int>("fldEmployeeID") == int.Parse(employeeId))
+                .Where(appointment => appointment.Field<int>("fldEmployeeID") == employeeId)
                 .Join(appointmentSummaries.AsEnumerable(), (summary) => summary.Field<int>("fldTicketID"), appointment => appointment.Field<int>("fldTicketID"), (appointment, summary) => new
                 {
                     fldClientID = summary.Field<int?>("fldClientID"),
@@ -118,72 +124,87 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
                     fldEmployeeName = appointment.Field<string>("fldEmployeeName"),
                     fldDescription = appointment.Field<string>("fldDescription"),
 
-                }).Where(q=> null != q.fldClientID )
-                .Join(allClients.AsEnumerable(), appointment => appointment.fldClientID, client => client.Field<int?>("fldClientID"), (appointment, client) => new {
+                }).Where(q => null != q.fldClientID)
+                .Join(allClients.AsEnumerable(), appointment => appointment.fldClientID, client => client.Field<int?>("fldClientID"), (appointment, client) => new
+                {
                     appointment.fldClientID,
-                    appointment.fldEmployeeID, 
+                    appointment.fldEmployeeID,
                     appointment.fldTicketID,
                     appointment.fldEmployeeName,
                     appointment.fldDescription,
-                    FirstName = client.Field<string>("fldFirstName"),
-                    LastName = client.Field<string>("fldLastName")
+                    fldFirstName = client.Field<string>("fldFirstName"),
+                    fldLastName = client.Field<string>("fldLastName"),
+                    client
                 });
 
             var clientIds = filterClients.Select(client => client.fldClientID.Value).Distinct();
-            var clients = allClients.Where(q => clientIds.Any(id => q.Field<int>("fldClientID") == id)).CopyToDataTable();
-            clients.TableName = "tblClients";
-            
 
+            var clients = filterClients.Select(c => c.client).Distinct().CopyToDataTable();
+            clients.TableName = "tblClients";
+            #endregion
+            #region Create Output Directories 
+            //create output directory
+            outputDirectory = outputDirectory ?? new DirectoryInfo("./output");
+            DirectoryInfo outputPath = null;
+            if (!outputDirectory.Exists)
+            {
+                Log.Verbose($"Base dutput directory {outputDirectory.FullName} does not exist, creating...");
+                outputDirectory.Create();
+                Log.Verbose($"done.");
+
+            }
+
+            Log.Verbose($"Creating output subdirectory for table extraction");
+
+            string dir = $"export_{employeeRecord.Field<string>("fldFirstName").ToLower()}_{employeeRecord.Field<string>("fldLastName").ToLower()}_{ DateTime.Now.ToString("MMddyyyy_hh_mm_ss")}";
+            outputPath = outputDirectory.CreateSubdirectory(dir);
+            Log.Verbose($"Created output directory {outputPath.FullName}");
+            #endregion
+            #region Write Table Data to csv
+            //write in-memory reference collection to csv 
             using var writer = new StreamWriter($"{outputPath}/tblRefClientTicket.csv");
             using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
+            Log.Information($"Exporting table tblRefClientTicket to csv tblRefClientTicket.csv ");
             
-            csv.WriteRecords(filterClients);
-            
-            
-
-
-            exportTables.Add("appointments", appointments);
-            exportTables.Add("clients", clients);
-            exportTables.Add("tblTicketsSummary", dataSet.Tables["tblTicketsSummary"]);
-            exportTables.Add("tblServiceFinish", dataSet.Tables["tblServiceFinish"]);
-            exportTables.Add("tblServiceDuration", dataSet.Tables["tblServiceDuration"]);
-            exportTables.Add("tblCreate", dataSet.Tables["tblCreate"]);
-            exportTables.Add("tblSoapNotes", dataSet.Tables["tblSoapNotes"]);
-
-
-
-            //additional tables if defined 
-            //var exportTables = dataSet.Tables.Cast<DataTable>().ToList().Where(q => exportTableNames.Any(a => a == q.TableName));
-
-            var clientRefTables = dataSet.Tables.Cast<DataTable>().Where(q => q.Columns.Cast<DataColumn>().Any(q => q.ColumnName == "fldClientID"));
-            foreach (var item in clientRefTables)
+            csv.WriteRecords(filterClients.Select(client => new
             {
-                Console.WriteLine(item.TableName);
-            }
+
+                client.fldClientID,
+                client.fldFirstName,
+                client.fldLastName,
+                client.fldTicketID,
+                client.fldDescription,
+                client.fldEmployeeID,
+                client.fldEmployeeName
+            }));
+
+            //collect filtered table data we want to export 
+            exportTables.Add("tblTicketsRow", apptTable);
+            exportTables.Add("tblClients", clients);
+            exportTables.Add("tblTicketsSummary", dataSet.Tables["tblTicketsSummary"]);
 
             foreach (var table in exportTables)
             {
                 var filePath = new FileInfo($"{ outputPath.FullName }/{table.Value.TableName}.csv");
                 Log.Information($"Exporting table {table.Value.TableName} to csv {filePath.Name} ");
                 ToCSV(table.Value, filePath.FullName);
-         
+
             }
-    
+            #endregion
+            #region Finish Up
+            //Open output directory 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
             {
                 FileName = outputPath.FullName,
                 UseShellExecute = true,
                 Verb = "open"
             });
+            #endregion
 
         }
 
-
-        public static IEnumerable<DataRow> FilterTable(DataTable table,  string col , string value){
-            var result = table.Select($"{col} = {value}");
-            return result;
-        } 
-        public static void ToCSV( DataTable dtDataTable, string strFilePath)
+        #region Helper Methods 
+        public static void ToCSV(DataTable dtDataTable, string strFilePath)
         {
             StreamWriter sw = new StreamWriter(strFilePath, false);
             //headers    
@@ -197,7 +218,7 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
             }
             sw.Write(sw.NewLine);
 
-            
+
 
             foreach (DataRow dr in dtDataTable.Rows)
             {
@@ -225,5 +246,6 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
             }
             sw.Close();
         }
+        #endregion
     }
 }

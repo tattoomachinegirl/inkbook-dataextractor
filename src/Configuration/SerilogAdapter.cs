@@ -12,15 +12,17 @@ namespace TattooMachineGirl.Inkbook.Data.Extract.Configuration
         public static Logger GetLogger(LogEventLevel logLevel = LogEventLevel.Information, DirectoryInfo logDirectory = null)
         {
             var config = new LoggerConfiguration();
-            var loglevel = new LoggingLevelSwitch(logLevel);
-            config.WriteTo.Console().MinimumLevel.ControlledBy(loglevel);
+          
+            config.WriteTo.Console(logLevel);
             
             if (null != logDirectory)
             {
                 if (!logDirectory.Exists) logDirectory.Create();
                 
-                config.WriteTo.RollingFile(logDirectory.FullName, LogEventLevel.Verbose);
+                config.WriteTo.File($"{logDirectory.FullName}/log_{ DateTime.Now.ToString("MMddyyyy_hh_mm_ss")}.txt").MinimumLevel.Verbose();
+                
             }
+            
             return config.CreateLogger();
         }
     }
