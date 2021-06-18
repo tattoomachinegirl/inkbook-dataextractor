@@ -1,0 +1,11 @@
+{
+  "appSettings": {
+    "inputFilePath": "./data.xml",
+    "outputDirectory": "./output",
+    "tables": [
+      "tblEmployees",
+      "tblClients",
+      "tblTicketsRow"
+    ]
+  }
+}
