@@ -24,20 +24,12 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
            "tblTicketsRow"
 
         };
+
         static void Main(FileInfo file, DirectoryInfo logDirectory = null, DirectoryInfo outputDirectory = null, LogEventLevel logLevel = LogEventLevel.Information)
         {
 
             file = file ?? new FileInfo("./data.xml");
 
-            //Setup Test Data 
-#if DEBUG
-            file = new FileInfo(@"./test-data/data.xml");
-            logLevel = LogEventLevel.Verbose;
-
-#endif
-            //Configure Serilog Action Logging 
-            
-            
             Log = Configuration.SerilogAdapter.GetLogger(logLevel, logDirectory);
             outputDirectory = outputDirectory ?? new DirectoryInfo("./output");
             DirectoryInfo outputPath = null;
@@ -94,14 +86,20 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
 
             var employeeRecord = employeeTable.AsEnumerable().Where(q => q.Field<string>("fldEmployeeID") == employeeId);
 
+            if (null == employeeId )
+            {
+                Log.Fatal($"Employee ID {employeeId } not found");
+                Environment.Exit(1);
+            }
 
+            var appointments  = dataSet.Tables["tblTicketsRow"].AsEnumerable().Where( q=> q.Field<string>("fldEmployeeID") == employeeId);
+
+            var clients = dataSet.Tables["tblTicketsRow"];
+
+
+            //additional tables if defined 
             var exportTables = dataSet.Tables.Cast<DataTable>().ToList().Where(q => exportTableNames.Any(a => a == q.TableName));
-
-            //foreach (DataTable item in dataSet.Tables)
-            //{
-            //    if (exportTableNames.Any())
-            //    exportTables.Add(item);
-            //}
+            
             try
             {
                 Assert.Equal(exportTableNames.Count, exportTables.Count());
@@ -112,6 +110,7 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
                 Log.Verbose(e.StackTrace);
                 Environment.Exit(1);
             }
+
             foreach (var table in exportTables)
             {
                 var filePath = new FileInfo($"{ outputPath.FullName }/{table.TableName}.csv");
@@ -129,6 +128,11 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
 
         }
 
+
+        public static IEnumerable<DataRow> FilterTable(DataTable table,  string col , string value){
+            var result = table.Select($"{col} = {value}");
+            return result;
+        } 
         public static void ToCSV( DataTable dtDataTable, string strFilePath)
         {
             StreamWriter sw = new StreamWriter(strFilePath, false);
