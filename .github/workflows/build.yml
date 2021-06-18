@@ -28,7 +28,7 @@ jobs:
     - run: dotnet tool install --global dotnet-warp 
     
     - name: Create Artifact
-      run: dotnet warp ./src/TattooMachineGirl.Inkbook.Data.Extract.csproj --output ./dist/ --rid -p:Version=0.1.0
+      run: dotnet warp ./src/TattooMachineGirl.Inkbook.Data.Extract.csproj --output ./dist/ --rid -p:Version=0.1.0 --verbose
     
     - uses: actions/upload-artifact@v2
       with:
