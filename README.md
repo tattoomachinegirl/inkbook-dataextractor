@@ -2,9 +2,9 @@
 
 To Run this tool 
 
-use the follwong steps 
+use the following steps 
 
-Download zip package from Releases 
+Download the latest zip package from Releases page 
 
 Extract to any directory you wish to work from ,  this will be your working directory for data extraction 
 
