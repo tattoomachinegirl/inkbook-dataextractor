@@ -4,8 +4,13 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>extract</AssemblyName>
-    <PublishTrimmed>true</PublishTrimmed>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="test-data\**" />
+    <EmbeddedResource Remove="test-data\**" />
+    <None Remove="test-data\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CsvHelper" Version="27.1.0" />
@@ -21,10 +26,6 @@
     <None Update="data.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="test-data\" />
   </ItemGroup>
 
 </Project>
