@@ -11565,6 +11565,62 @@
     <fldDateCreated>2021-06-17 14:43:02</fldDateCreated>
     <fldOptInStatus>1</fldOptInStatus>
   </tblClients>
+  <tblClients>
+    <fldAddress>752 Rowena St</fldAddress>
+    <fldAptEmail>true</fldAptEmail>
+    <fldAptSMS>true</fldAptSMS>
+    <fldCellEmail>6474056088</fldCellEmail>
+    <fldCellPhone>(647) 405-6088</fldCellPhone>
+    <fldCity>Oshawa</fldCity>
+    <fldClientID>1002</fldClientID>
+    <fldCN>RemoteAccess</fldCN>
+    <fldEMail>clmcgrathdev@gmail.com</fldEMail>
+    <fldFirstName>Test</fldFirstName>
+    <fldHomePhone>(647) 405-6088</fldHomePhone>
+    <fldLastEdit>2021-06-18 06:43:29</fldLastEdit>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldLastName>Client 3</fldLastName>
+    <fldMailing>true</fldMailing>
+    <fldPhoneNum>6474056088.6474056088</fldPhoneNum>
+    <fldPrimaryPhone>2</fldPrimaryPhone>
+    <fldPrimaryPhoneNumber>(647) 405-6088</fldPrimaryPhoneNumber>
+    <fldState>Ontario</fldState>
+    <fldZIP>L1H4Z4</fldZIP>
+    <fldInactive>false</fldInactive>
+    <fldPK>4</fldPK>
+    <fldGuid>3be5021e-34c3-4420-ab4d-3d5df81719be</fldGuid>
+    <fldDateCreated>2021-06-18 06:43:29</fldDateCreated>
+    <fldOptInStatus>1</fldOptInStatus>
+  </tblClients>
+  <tblClients>
+    <fldAddress>752 Rowena St</fldAddress>
+    <fldAptEmail>true</fldAptEmail>
+    <fldAptSMS>true</fldAptSMS>
+    <fldCellEmail>6474056088</fldCellEmail>
+    <fldCellPhone>(647) 405-6088</fldCellPhone>
+    <fldCity>Oshawa</fldCity>
+    <fldClientID>1003</fldClientID>
+    <fldCN>RemoteAccess</fldCN>
+    <fldEMail>clmcgrathdev@gmail.com</fldEMail>
+    <fldFirstName>Test</fldFirstName>
+    <fldHomePhone>(647) 405-6088</fldHomePhone>
+    <fldLastEdit>2021-06-18 06:43:49</fldLastEdit>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldLastName>Client 4</fldLastName>
+    <fldMailing>true</fldMailing>
+    <fldPhoneNum>6474056088.6474056088</fldPhoneNum>
+    <fldPrimaryPhone>2</fldPrimaryPhone>
+    <fldPrimaryPhoneNumber>(647) 405-6088</fldPrimaryPhoneNumber>
+    <fldState>Ontario</fldState>
+    <fldZIP>L1H4Z4</fldZIP>
+    <fldInactive>false</fldInactive>
+    <fldPK>5</fldPK>
+    <fldGuid>8a11ff01-758f-4e49-a8c2-f8b0a7a58ab4</fldGuid>
+    <fldDateCreated>2021-06-18 06:43:49</fldDateCreated>
+    <fldOptInStatus>1</fldOptInStatus>
+  </tblClients>
   <tblClientsClass>
     <fldPK>1</fldPK>
     <fldOrder>0</fldOrder>
@@ -11662,7 +11718,7 @@
     <fldState>ON</fldState>
     <fldZIP>L1H 4Z4</fldZIP>
     <fldCellPhone>(647) 405-6088</fldCellPhone>
-    <fldEMail>chris.mcgrath@digitalparadox.ca</fldEMail>
+    <fldEMail>krista@digitalparadox.ca</fldEMail>
     <fldWebName>Krista Herzog</fldWebName>
     <fldActive>true</fldActive>
     <fldSearch>true</fldSearch>
@@ -11677,7 +11733,7 @@
     <fldShowABCategory>true</fldShowABCategory>
     <fldShowABComment>true</fldShowABComment>
     <fldShowABPicture>true</fldShowABPicture>
-    <fldWebEMail>CloudUser+848056.1000.KristaH@daysmart.com</fldWebEMail>
+    <fldWebEMail>krista@digitalparadox.ca</fldWebEMail>
     <fldPK>2</fldPK>
     <fldLastEdit>2021-06-17 16:55:22</fldLastEdit>
     <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
@@ -11699,7 +11755,7 @@
     <fldState>Ontario</fldState>
     <fldZIP>L1H4Z4</fldZIP>
     <fldCellPhone>(647) 405-6088</fldCellPhone>
-    <fldEMail>clmcgrathdev@gmail.com</fldEMail>
+    <fldEMail>chris.mcgrath@digitalparadox.ca</fldEMail>
     <fldWebName>Kyle Stuart</fldWebName>
     <fldActive>true</fldActive>
     <fldSearch>true</fldSearch>
@@ -11714,7 +11770,7 @@
     <fldShowABCategory>true</fldShowABCategory>
     <fldShowABComment>true</fldShowABComment>
     <fldShowABPicture>true</fldShowABPicture>
-    <fldWebEMail>CloudUser+848056.1001.KyleS@daysmart.com</fldWebEMail>
+    <fldWebEMail>chris.mcgrath@digitalparadox.ca</fldWebEMail>
     <fldPK>3</fldPK>
     <fldLastEdit>2021-06-17 14:44:26</fldLastEdit>
     <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
@@ -12159,10 +12215,226 @@
     <fldComputer>RemoteAccess</fldComputer>
     <fldPK>34</fldPK>
   </tblLog>
+  <tblLog>
+    <fldID>1002</fldID>
+    <fldName>Test Client 3</fldName>
+    <fldType>2</fldType>
+    <fldAction>15</fldAction>
+    <fldDate>2021-06-18 06:43:29</fldDate>
+    <fldTime>1899-12-30 06:43:29</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>35</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1003</fldID>
+    <fldName>Test Client 4</fldName>
+    <fldType>2</fldType>
+    <fldAction>15</fldAction>
+    <fldDate>2021-06-18 06:43:49</fldDate>
+    <fldTime>1899-12-30 06:43:49</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>36</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1002</fldID>
+    <fldName>Test Client 3</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 06:52:08</fldDate>
+    <fldTime>1899-12-30 06:52:08</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>37</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1003</fldID>
+    <fldName>Test Client 2</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 06:52:32</fldDate>
+    <fldTime>1899-12-30 06:52:32</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>38</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1004</fldID>
+    <fldName>Test Client 4</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 06:53:18</fldDate>
+    <fldTime>1899-12-30 06:53:18</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>39</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1005</fldID>
+    <fldName>Test Client 2</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 12:42:41</fldDate>
+    <fldTime>1899-12-30 12:42:41</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>40</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1006</fldID>
+    <fldName>Test Client 4</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 12:43:01</fldDate>
+    <fldTime>1899-12-30 12:43:01</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>41</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1007</fldID>
+    <fldName>Test Client 3</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 12:43:25</fldDate>
+    <fldTime>1899-12-30 12:43:25</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>42</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1008</fldID>
+    <fldName>Walk In</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 12:43:57</fldDate>
+    <fldTime>1899-12-30 12:43:57</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>43</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1009</fldID>
+    <fldName>Test Client 2</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 12:44:19</fldDate>
+    <fldTime>1899-12-30 12:44:19</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>44</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1010</fldID>
+    <fldName>Test Clent</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 12:44:40</fldDate>
+    <fldTime>1899-12-30 12:44:40</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>45</fldPK>
+  </tblLog>
+  <tblLog>
+    <fldID>1011</fldID>
+    <fldName>Test Client 4</fldName>
+    <fldType>1</fldType>
+    <fldAction>10</fldAction>
+    <fldDate>2021-06-18 12:45:00</fldDate>
+    <fldTime>1899-12-30 12:45:00</fldTime>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldComputer>RemoteAccess</fldComputer>
+    <fldPK>46</fldPK>
+  </tblLog>
   <tblMessagesConnectionHistoryLog>
     <fldDateTimeSent>2021-06-17 16:54:38</fldDateTimeSent>
     <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
     <fldPK>1</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 06:52:08</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>2</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 06:52:32</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>3</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 06:53:18</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>4</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 12:42:41</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>5</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 12:43:01</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>6</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 12:43:25</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>7</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 12:43:57</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>8</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 12:44:19</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>9</fldPK>
+    <fldNumberOfEmails>0</fldNumberOfEmails>
+    <fldNumberOfSMS>0</fldNumberOfSMS>
+    <fldComputerName>RemoteAccess</fldComputerName>
+  </tblMessagesConnectionHistoryLog>
+  <tblMessagesConnectionHistoryLog>
+    <fldDateTimeSent>2021-06-18 12:44:39</fldDateTimeSent>
+    <fldMessage>Repository reported cannot send messages. MessagingClient: 'Undefined' IsEmailSystemActive: 'False' SMTPServer: ''</fldMessage>
+    <fldPK>10</fldPK>
     <fldNumberOfEmails>0</fldNumberOfEmails>
     <fldNumberOfSMS>0</fldNumberOfSMS>
     <fldComputerName>RemoteAccess</fldComputerName>
@@ -13474,6 +13746,15 @@
     <fldIsDropOff>false</fldIsDropOff>
     <fldPetServiceType>0</fldPetServiceType>
   </tblProductsAndServices>
+  <tblRecordLock>
+    <fldComp>RemoteAccess</fldComp>
+    <fldDate>2021-06-18 06:49:54</fldDate>
+    <fldItemCode>2</fldItemCode>
+    <fldItemKey>E</fldItemKey>
+    <fldItemID>3</fldItemID>
+    <fldPK>10</fldPK>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+  </tblRecordLock>
   <tblRefer>
     <fldOrder>1</fldOrder>
     <fldPK>1</fldPK>
@@ -13769,6 +14050,156 @@ Total: $90.40
 </fldHistory>
     <fldPK>1</fldPK>
   </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1002</fldTicketID>
+    <fldHistory>6/18/2021 6:52 AM (RemoteAccess) Chris McGrath
+Client: Test Client 3
+Client ID: 1002
+Status: Open
+Scheduled for 6/22/2021
+Rows Changed: 
+ * Kyle Stuart (S) Conch Pi 11:00 AM Qty Prch:1 Qty Used:1 Total:$40.00 Com:$40.00
+Total: $45.20
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>2</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1003</fldTicketID>
+    <fldHistory>6/18/2021 6:52 AM (RemoteAccess) Chris McGrath
+Client: Test Client 2
+Client ID: 1001
+Status: Open
+Scheduled for 6/22/2021
+Rows Changed: 
+ * Kyle Stuart (S) Bridge P 11:30 AM Qty Prch:1 Qty Used:1 Total:$40.00 Com:$40.00
+Total: $45.20
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>3</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1004</fldTicketID>
+    <fldHistory>6/18/2021 6:53 AM (RemoteAccess) Chris McGrath
+Client: Test Client 4
+Client ID: 1003
+Status: Open
+Scheduled for 6/19/2021
+Rows Changed: 
+ * Kyle Stuart (S) Cheeks P 11:30 AM Qty Prch:1 Qty Used:1 Total:$70.00 Com:$70.00
+Total: $79.10
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>4</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1005</fldTicketID>
+    <fldHistory>6/18/2021 12:42 PM (RemoteAccess) Chris McGrath
+Client: Test Client 2
+Client ID: 1001
+Status: Open
+Scheduled for 6/19/2021
+Rows Changed: 
+ * Kyle Stuart (S) Cheek Pi 12:00 PM Qty Prch:1 Qty Used:1 Total:$40.00 Com:$40.00
+Total: $45.20
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>5</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1006</fldTicketID>
+    <fldHistory>6/18/2021 12:43 PM (RemoteAccess) Chris McGrath
+Client: Test Client 4
+Client ID: 1003
+Status: Open
+Scheduled for 6/19/2021
+Rows Changed: 
+ * Kyle Stuart (S) Cheeks P 1:15 PM Qty Prch:1 Qty Used:1 Total:$70.00 Com:$70.00
+Total: $79.10
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>6</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1007</fldTicketID>
+    <fldHistory>6/18/2021 12:43 PM (RemoteAccess) Chris McGrath
+Client: Test Client 3
+Client ID: 1002
+Status: Open
+Scheduled for 6/19/2021
+Rows Changed: 
+ * Kyle Stuart (S) Bridge P 12:45 PM Qty Prch:1 Qty Used:1 Total:$40.00 Com:$40.00
+Total: $45.20
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>7</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1008</fldTicketID>
+    <fldHistory>6/18/2021 12:43 PM (RemoteAccess) Chris McGrath
+Client: Walk In
+Client ID: 0
+Status: Open
+Scheduled for 6/22/2021
+Rows Changed: 
+ * Chris McGrath (S) Consulta 12:30 PM Qty Prch:1 Qty Used:1 Total:$0.00
+Total: $0.00
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>8</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1009</fldTicketID>
+    <fldHistory>6/18/2021 12:44 PM (RemoteAccess) Chris McGrath
+Client: Test Client 2
+Client ID: 1001
+Status: Open
+Scheduled for 6/22/2021
+Rows Changed: 
+ * Chris McGrath (S) Cheek Pi 1:30 PM Qty Prch:1 Qty Used:1 Total:$40.00 Com:$40.00
+Total: $45.20
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>9</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1010</fldTicketID>
+    <fldHistory>6/18/2021 12:44 PM (RemoteAccess) Chris McGrath
+Client: Test Clent
+Client ID: 1000
+Status: Open
+Scheduled for 6/22/2021
+Rows Changed: 
+ * Chris McGrath (S) Cheek Pi 2:30 PM Qty Prch:1 Qty Used:1 Total:$40.00 Com:$40.00
+Total: $45.20
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>10</fldPK>
+  </tblTicketsHistory>
+  <tblTicketsHistory>
+    <fldTicketID>1011</fldTicketID>
+    <fldHistory>6/18/2021 12:45 PM (RemoteAccess) Chris McGrath
+Client: Test Client 4
+Client ID: 1003
+Status: Open
+Scheduled for 6/5/2021
+Rows Changed: 
+ * Chris McGrath (S) Cheek Pi 12:15 PM Qty Prch:1 Qty Used:1 Total:$40.00 Com:$40.00
+Total: $45.20
+
+----------------------------------------------------------------------------------------------------
+</fldHistory>
+    <fldPK>11</fldPK>
+  </tblTicketsHistory>
   <tblTicketsRow>
     <fldTicketID>1000</fldTicketID>
     <fldEmployeeID>100</fldEmployeeID>
@@ -13998,6 +14429,496 @@ Total: $90.40
     <fldTaxableTotal>0.0000</fldTaxableTotal>
     <fldRowSubTotal>0.0000</fldRowSubTotal>
   </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1002</fldTicketID>
+    <fldEmployeeID>1001</fldEmployeeID>
+    <fldEmployeeName>Kyle Stuart</fldEmployeeName>
+    <fldStartTime>1899-12-30 11:00:00</fldStartTime>
+    <fldEndTime>1899-12-30 11:20:00</fldEndTime>
+    <fldID>ConchP</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Conch Piercing</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>40.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>40.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>40.0000</fldCommission>
+    <fldCommissionPrch>40.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>1080863910568919040</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-22 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-22 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>6</fldPK>
+    <fldStartDateTime>2021-06-22 11:00:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-22 11:20:00</fldEndDateTime>
+    <fldGuid>79d7505c-16db-4ade-901c-f661c2be45a9</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>40.0000</fldTaxableTotal>
+    <fldRowSubTotal>40.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>5.2000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1003</fldTicketID>
+    <fldEmployeeID>1001</fldEmployeeID>
+    <fldEmployeeName>Kyle Stuart</fldEmployeeName>
+    <fldStartTime>1899-12-30 11:30:00</fldStartTime>
+    <fldEndTime>1899-12-30 11:50:00</fldEndTime>
+    <fldID>BP</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Bridge Piercing</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>40.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>40.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>40.0000</fldCommission>
+    <fldCommissionPrch>40.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>16888498602639360</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-22 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-22 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>7</fldPK>
+    <fldStartDateTime>2021-06-22 11:30:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-22 11:50:00</fldEndDateTime>
+    <fldGuid>645cd43a-3fdd-4c02-942c-1d82dad780b3</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>40.0000</fldTaxableTotal>
+    <fldRowSubTotal>40.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>5.2000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1004</fldTicketID>
+    <fldEmployeeID>1001</fldEmployeeID>
+    <fldEmployeeName>Kyle Stuart</fldEmployeeName>
+    <fldStartTime>1899-12-30 11:30:00</fldStartTime>
+    <fldEndTime>1899-12-30 11:50:00</fldEndTime>
+    <fldID>CPB</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Cheeks Piercing (Both)</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>70.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>70.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>70.0000</fldCommission>
+    <fldCommissionPrch>70.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>16888498602639360</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-19 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-19 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>8</fldPK>
+    <fldStartDateTime>2021-06-19 11:30:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-19 11:50:00</fldEndDateTime>
+    <fldGuid>1400d9a0-3bc2-42cb-9adb-0c17b45ebc8e</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>70.0000</fldTaxableTotal>
+    <fldRowSubTotal>70.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>9.1000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1005</fldTicketID>
+    <fldEmployeeID>1001</fldEmployeeID>
+    <fldEmployeeName>Kyle Stuart</fldEmployeeName>
+    <fldStartTime>1899-12-30 12:00:00</fldStartTime>
+    <fldEndTime>1899-12-30 12:20:00</fldEndTime>
+    <fldID>CP</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Cheek Piercing</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>40.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>40.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>40.0000</fldCommission>
+    <fldCommissionPrch>40.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>263882790666240</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-19 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-19 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>9</fldPK>
+    <fldStartDateTime>2021-06-19 12:00:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-19 12:20:00</fldEndDateTime>
+    <fldGuid>bc83689d-362d-4db7-a6e4-539dc92518f0</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>40.0000</fldTaxableTotal>
+    <fldRowSubTotal>40.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>5.2000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1006</fldTicketID>
+    <fldEmployeeID>1001</fldEmployeeID>
+    <fldEmployeeName>Kyle Stuart</fldEmployeeName>
+    <fldStartTime>1899-12-30 13:15:00</fldStartTime>
+    <fldEndTime>1899-12-30 13:35:00</fldEndTime>
+    <fldID>CPB</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Cheeks Piercing (Both)</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>70.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>70.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>70.0000</fldCommission>
+    <fldCommissionPrch>70.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>8053063680</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-19 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-19 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>10</fldPK>
+    <fldStartDateTime>2021-06-19 13:15:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-19 13:35:00</fldEndDateTime>
+    <fldGuid>764ea131-ca9f-4cb8-a089-b7e2dacf1b25</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>70.0000</fldTaxableTotal>
+    <fldRowSubTotal>70.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>9.1000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1007</fldTicketID>
+    <fldEmployeeID>1001</fldEmployeeID>
+    <fldEmployeeName>Kyle Stuart</fldEmployeeName>
+    <fldStartTime>1899-12-30 12:45:00</fldStartTime>
+    <fldEndTime>1899-12-30 13:05:00</fldEndTime>
+    <fldID>BP</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Bridge Piercing</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>40.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>40.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>40.0000</fldCommission>
+    <fldCommissionPrch>40.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>515396075520</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-19 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-19 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>11</fldPK>
+    <fldStartDateTime>2021-06-19 12:45:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-19 13:05:00</fldEndDateTime>
+    <fldGuid>6de588bd-5112-4c6a-b836-e10c15839840</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>40.0000</fldTaxableTotal>
+    <fldRowSubTotal>40.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>5.2000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1008</fldTicketID>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldStartTime>1899-12-30 12:30:00</fldStartTime>
+    <fldEndTime>1899-12-30 13:00:00</fldEndTime>
+    <fldID>C</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Consultation</fldDescription>
+    <fldCategory>Consultation</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>0.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>0.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>0.0000</fldCommission>
+    <fldCommissionPrch>0.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>4329327034368</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-22 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-22 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>12</fldPK>
+    <fldStartDateTime>2021-06-22 12:30:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-22 13:00:00</fldEndDateTime>
+    <fldGuid>fc58dfb2-b345-4c4b-a33e-03c836cf2a2d</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>0.0000</fldTaxableTotal>
+    <fldRowSubTotal>0.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>0.0000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1009</fldTicketID>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldStartTime>1899-12-30 13:30:00</fldStartTime>
+    <fldEndTime>1899-12-30 13:50:00</fldEndTime>
+    <fldID>CP</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Cheek Piercing</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>40.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>40.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>40.0000</fldCommission>
+    <fldCommissionPrch>40.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>1006632960</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-22 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-22 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>13</fldPK>
+    <fldStartDateTime>2021-06-22 13:30:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-22 13:50:00</fldEndDateTime>
+    <fldGuid>0d264c79-6475-4a9b-b5ce-37d70f50f299</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>40.0000</fldTaxableTotal>
+    <fldRowSubTotal>40.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>5.2000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1010</fldTicketID>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldStartTime>1899-12-30 14:30:00</fldStartTime>
+    <fldEndTime>1899-12-30 14:50:00</fldEndTime>
+    <fldID>CP</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Cheek Piercing</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>40.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>40.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>40.0000</fldCommission>
+    <fldCommissionPrch>40.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>245760</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-22 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-22 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>14</fldPK>
+    <fldStartDateTime>2021-06-22 14:30:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-22 14:50:00</fldEndDateTime>
+    <fldGuid>383325f2-29bb-4050-a2ad-595d7b8f2a03</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>40.0000</fldTaxableTotal>
+    <fldRowSubTotal>40.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>5.2000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
+  <tblTicketsRow>
+    <fldTicketID>1011</fldTicketID>
+    <fldEmployeeID>100</fldEmployeeID>
+    <fldEmployeeName>Chris McGrath</fldEmployeeName>
+    <fldStartTime>1899-12-30 12:15:00</fldStartTime>
+    <fldEndTime>1899-12-30 12:35:00</fldEndTime>
+    <fldID>CP</fldID>
+    <fldPS>S</fldPS>
+    <fldDescription>Cheek Piercing</fldDescription>
+    <fldCategory>Piercing</fldCategory>
+    <fldQuantity>1</fldQuantity>
+    <fldQuantityUsed>1</fldQuantityUsed>
+    <fldPrice>40.0000</fldPrice>
+    <fldBackBar>0.0000</fldBackBar>
+    <fldDiscountCurrency>0.0000</fldDiscountCurrency>
+    <fldDiscountPercent>0</fldDiscountPercent>
+    <fldRowTotal>40.0000</fldRowTotal>
+    <fldTaxable>true</fldTaxable>
+    <fldRowOrder>0</fldRowOrder>
+    <fldCommission>40.0000</fldCommission>
+    <fldCommissionPrch>40.0000</fldCommissionPrch>
+    <fldFBS_0>0</fldFBS_0>
+    <fldFBS_1>0</fldFBS_1>
+    <fldFBS_2>32985348833280</fldFBS_2>
+    <fldFBS_3>0</fldFBS_3>
+    <fldFBS_4>0</fldFBS_4>
+    <fldBonus>0.0000</fldBonus>
+    <fldPetID>0</fldPetID>
+    <fldPetName>(none)</fldPetName>
+    <fldStartDate>2021-06-05 00:00:00</fldStartDate>
+    <fldEndDate>2021-06-05 00:00:00</fldEndDate>
+    <fldMultiDay>false</fldMultiDay>
+    <fldPK>15</fldPK>
+    <fldStartDateTime>2021-06-05 12:15:00</fldStartDateTime>
+    <fldEndDateTime>2021-06-05 12:35:00</fldEndDateTime>
+    <fldGuid>34a68006-1e59-4a0c-a81c-6981ff3e3376</fldGuid>
+    <fldTax1Apply>true</fldTax1Apply>
+    <fldTax2Apply>false</fldTax2Apply>
+    <fldTax3Apply>false</fldTax3Apply>
+    <fldTaxableTotal>40.0000</fldTaxableTotal>
+    <fldRowSubTotal>40.0000</fldRowSubTotal>
+    <fldRowTotalCouponDiscount>0.0000</fldRowTotalCouponDiscount>
+    <fldRowTotalLoyaltyPointDiscount>0.0000</fldRowTotalLoyaltyPointDiscount>
+    <fldTaxableCouponDiscount>0.0000</fldTaxableCouponDiscount>
+    <fldTaxableLoyaltyPointDiscount>0.0000</fldTaxableLoyaltyPointDiscount>
+    <fldTax1Amount>5.2000</fldTax1Amount>
+    <fldTax2Amount>0.0000</fldTax2Amount>
+    <fldTax3Amount>0.0000</fldTax3Amount>
+  </tblTicketsRow>
   <tblTicketsSummary>
     <fldTicketID>1000</fldTicketID>
     <fldTicketType>0</fldTicketType>
@@ -14063,5 +14984,434 @@ Total: $90.40
     <fldTimeCreated>2021-06-17 16:56:11</fldTimeCreated>
     <fldPK>2</fldPK>
     <fldGuid>f0c903e7-51a1-4726-bbc9-1032c3beaf30</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1002</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1002</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 3</fldLastName>
+    <fldDateScheduled>2021-06-22 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>40.0000</fldSubtotal>
+    <fldTax1>5.2000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>45.2000</fldTotal>
+    <fldChange>-45.2000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 06:52:08</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>5.2</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 06:52:08</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>3</fldPK>
+    <fldGuid>1324ea0d-0b9a-4842-b969-70d740567287</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1003</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1001</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 2</fldLastName>
+    <fldDateScheduled>2021-06-22 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>40.0000</fldSubtotal>
+    <fldTax1>5.2000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>45.2000</fldTotal>
+    <fldChange>-45.2000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 06:52:32</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>5.2</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 06:52:32</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>4</fldPK>
+    <fldGuid>16292518-41c6-4cfc-82e4-77726e13a987</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1004</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1003</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 4</fldLastName>
+    <fldDateScheduled>2021-06-19 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>70.0000</fldSubtotal>
+    <fldTax1>9.1000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>79.1000</fldTotal>
+    <fldChange>-79.1000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 06:53:18</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>9.1</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 06:53:17</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>5</fldPK>
+    <fldGuid>b4ac63f0-1b78-4e04-9221-ae47809b3781</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1005</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1001</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 2</fldLastName>
+    <fldDateScheduled>2021-06-19 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>40.0000</fldSubtotal>
+    <fldTax1>5.2000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>45.2000</fldTotal>
+    <fldChange>-45.2000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 12:42:41</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>5.2</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 12:42:40</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>6</fldPK>
+    <fldGuid>f47add8a-486f-44ca-86c9-4d6842147f38</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1006</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1003</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 4</fldLastName>
+    <fldDateScheduled>2021-06-19 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>70.0000</fldSubtotal>
+    <fldTax1>9.1000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>79.1000</fldTotal>
+    <fldChange>-79.1000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 12:43:01</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>9.1</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 12:43:01</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>7</fldPK>
+    <fldGuid>3399c47c-bdb3-4f8b-a8dd-cb3c76c53e64</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1007</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1002</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 3</fldLastName>
+    <fldDateScheduled>2021-06-19 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>40.0000</fldSubtotal>
+    <fldTax1>5.2000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>45.2000</fldTotal>
+    <fldChange>-45.2000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 12:43:25</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>5.2</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 12:43:25</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>8</fldPK>
+    <fldGuid>085a19aa-1e06-4d0c-8b69-59f18c61c35b</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1008</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>0</fldClientID>
+    <fldFirstName>Walk</fldFirstName>
+    <fldLastName>In</fldLastName>
+    <fldDateScheduled>2021-06-22 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>0.0000</fldSubtotal>
+    <fldTax1>0.0000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>0.0000</fldTotal>
+    <fldChange>0.0000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 12:43:57</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>0</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 12:43:56</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>9</fldPK>
+    <fldGuid>de69e2ff-3904-42b1-a6a2-069b72fe80d9</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1009</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1001</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 2</fldLastName>
+    <fldDateScheduled>2021-06-22 00:00:00</fldDateScheduled>
+    <fldReferral>New</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>40.0000</fldSubtotal>
+    <fldTax1>5.2000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>45.2000</fldTotal>
+    <fldChange>-45.2000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 12:44:19</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>5.2</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 12:44:18</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>10</fldPK>
+    <fldGuid>c5151189-735f-463b-98fe-9b7d9c5d39de</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1010</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1000</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Clent</fldLastName>
+    <fldDateScheduled>2021-06-22 00:00:00</fldDateScheduled>
+    <fldReferral>New Request</fldReferral>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>40.0000</fldSubtotal>
+    <fldTax1>5.2000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>45.2000</fldTotal>
+    <fldChange>-45.2000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 12:44:40</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>5.2</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 12:44:39</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>11</fldPK>
+    <fldGuid>f9a1f4c1-809b-4b0a-b86e-a8f9ebba1f5e</fldGuid>
+  </tblTicketsSummary>
+  <tblTicketsSummary>
+    <fldTicketID>1011</fldTicketID>
+    <fldTicketType>0</fldTicketType>
+    <fldTicketStatus>Open</fldTicketStatus>
+    <fldClientID>1003</fldClientID>
+    <fldFirstName>Test</fldFirstName>
+    <fldLastName>Client 4</fldLastName>
+    <fldDateScheduled>2021-06-05 00:00:00</fldDateScheduled>
+    <fldTender1>0.0000</fldTender1>
+    <fldTender2>0.0000</fldTender2>
+    <fldCreate>RemoteAccess</fldCreate>
+    <fldSubtotal>40.0000</fldSubtotal>
+    <fldTax1>5.2000</fldTax1>
+    <fldTax2>0.0000</fldTax2>
+    <fldTax3>0.0000</fldTax3>
+    <fldTotal>45.2000</fldTotal>
+    <fldChange>-45.2000</fldChange>
+    <fldTaxName1>Sales Tax</fldTaxName1>
+    <fldPTax1>13</fldPTax1>
+    <fldPTax2>0</fldPTax2>
+    <fldPTax3>0</fldPTax3>
+    <fldSTax1>13</fldSTax1>
+    <fldSTax2>0</fldSTax2>
+    <fldSTax3>0</fldSTax3>
+    <fldCompoundTax2>false</fldCompoundTax2>
+    <fldCompoundTax3>false</fldCompoundTax3>
+    <fldLastEdit>2021-06-18 12:45:00</fldLastEdit>
+    <fldCN>RemoteAccess</fldCN>
+    <fldLastEditEmployee>Chris McGrath</fldLastEditEmployee>
+    <fldLastEditEmployeeID>100</fldLastEditEmployeeID>
+    <fldCompleted>false</fldCompleted>
+    <fldTaxDec1>5.2</fldTaxDec1>
+    <fldTaxDec2>0</fldTaxDec2>
+    <fldTaxDec3>0</fldTaxDec3>
+    <fldDateCreated>2021-06-18 00:00:00</fldDateCreated>
+    <fldIndependentID>0</fldIndependentID>
+    <fldRebooked>false</fldRebooked>
+    <fldTimeCreated>1899-12-30 12:45:00</fldTimeCreated>
+    <fldRemoteCreated>true</fldRemoteCreated>
+    <fldPK>12</fldPK>
+    <fldGuid>36867d79-16b4-4cde-8e27-e027f7d65646</fldGuid>
   </tblTicketsSummary>
 </NewDataSet>

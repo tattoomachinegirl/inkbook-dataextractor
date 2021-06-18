@@ -4,11 +4,9 @@ using Serilog.Events;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace TattooMachineGirl.Inkbook.Data.Extract
@@ -16,20 +14,21 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
     class Program
     {
         public static Logger Log { get; set; }
-        private static List<string> exportTableNames = new List<string>
+        private static Dictionary<string, string> exportTableNames = new Dictionary<string, string>
         {
 
-           "tblEmployees", 
-           "tblClients",
-           "tblTicketsRow"
+           { "employees",       "tblEmployees"  },
+           { "clients",         "tblClients"    },
+           { "appointments",    "tblTicketsRow" }
 
         };
 
         static void Main(FileInfo file, DirectoryInfo logDirectory = null, DirectoryInfo outputDirectory = null, LogEventLevel logLevel = LogEventLevel.Information)
         {
+            //Set default file location 
+            file ??= new FileInfo("./data.xml");
 
-            file = file ?? new FileInfo("./data.xml");
-
+            #region Configure Logger
             Log = Configuration.SerilogAdapter.GetLogger(logLevel, logDirectory);
             outputDirectory = outputDirectory ?? new DirectoryInfo("./output");
             DirectoryInfo outputPath = null;
@@ -40,7 +39,9 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
                 Log.Verbose($"done.");
 
             }
+            #endregion
 
+            #region Load DataSet
             string dir = $"export_{ DateTime.Now.ToString("MMddyyyy_hh_mm_ss")}";
             outputPath = outputDirectory.CreateSubdirectory(dir);
             Log.Verbose($"Created output directory {outputPath.FullName}");
@@ -58,7 +59,7 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
                 dataSet.ReadXml(file.FullName);
                 Log.Information($"Loaded {dataSet.Tables.Count} Tables from DataSet");
 
-               
+                
 
 
                 foreach (DataTable table in dataSet.Tables)
@@ -75,13 +76,20 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
                     Log.Error(e.StackTrace);
                 Environment.Exit(1);
             }
+            #endregion
 
-            DataTable employeeTable = dataSet.Tables["tblEmployees"];
+            #region Get Employee
+            Console.WriteLine();
+            DataTable employeeTable = dataSet.Tables[exportTableNames["employees"]];
             foreach (DataRow emp in employeeTable.AsEnumerable())
             {
                 Log.Information($"{emp.Field<int>("fldEmployeeID")}: {emp.Field<string>("fldFirstName")} {emp.Field<string>("fldLastName")} ");
             }
+
             Console.Write("Enter Employee ID to Export: ");
+            Console.WriteLine();
+            
+
             var employeeId = Console.ReadLine().Trim();
 
             var employeeRecord = employeeTable.AsEnumerable().Where(q => q.Field<string>("fldEmployeeID") == employeeId);
@@ -91,31 +99,73 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
                 Log.Fatal($"Employee ID {employeeId } not found");
                 Environment.Exit(1);
             }
+            #endregion
 
-            var appointments  = dataSet.Tables["tblTicketsRow"].AsEnumerable().Where( q=> q.Field<string>("fldEmployeeID") == employeeId);
+            var exportTables = new Dictionary<string, DataTable>();
 
-            var clients = dataSet.Tables["tblTicketsRow"];
+            var appointments  = dataSet.Tables["tblTicketsRow"].AsEnumerable().Where( q=> q.Field<int>("fldEmployeeID") == int.Parse(employeeId)).CopyToDataTable();
+                                appointments.TableName = "tblTicketsRow";
+            var appointmentSummaries = dataSet.Tables["tblTicketsSummary"];
+            var allClients = dataSet.Tables["tblClients"].AsEnumerable();
+
+            var filterClients = appointments.AsEnumerable()
+                .Where(appointment => appointment.Field<int>("fldEmployeeID") == int.Parse(employeeId))
+                .Join(appointmentSummaries.AsEnumerable(), (summary) => summary.Field<int>("fldTicketID"), appointment => appointment.Field<int>("fldTicketID"), (appointment, summary) => new
+                {
+                    fldClientID = summary.Field<int?>("fldClientID"),
+                    fldEmployeeID = appointment.Field<int>("fldEmployeeID"),
+                    fldTicketID = summary.Field<int>("fldTicketID"),
+                    fldEmployeeName = appointment.Field<string>("fldEmployeeName"),
+                    fldDescription = appointment.Field<string>("fldDescription"),
+
+                }).Where(q=> null != q.fldClientID )
+                .Join(allClients.AsEnumerable(), appointment => appointment.fldClientID, client => client.Field<int?>("fldClientID"), (appointment, client) => new {
+                    appointment.fldClientID,
+                    appointment.fldEmployeeID, 
+                    appointment.fldTicketID,
+                    appointment.fldEmployeeName,
+                    appointment.fldDescription,
+                    FirstName = client.Field<string>("fldFirstName"),
+                    LastName = client.Field<string>("fldLastName")
+                });
+
+            var clientIds = filterClients.Select(client => client.fldClientID.Value).Distinct();
+            var clients = allClients.Where(q => clientIds.Any(id => q.Field<int>("fldClientID") == id)).CopyToDataTable();
+            clients.TableName = "tblClients";
+            
+
+            using var writer = new StreamWriter($"{outputPath}/tblRefClientTicket.csv");
+            using var csv = new CsvWriter(writer, CultureInfo.InvariantCulture);
+            
+            csv.WriteRecords(filterClients);
+            
+            
+
+
+            exportTables.Add("appointments", appointments);
+            exportTables.Add("clients", clients);
+            exportTables.Add("tblTicketsSummary", dataSet.Tables["tblTicketsSummary"]);
+            exportTables.Add("tblServiceFinish", dataSet.Tables["tblServiceFinish"]);
+            exportTables.Add("tblServiceDuration", dataSet.Tables["tblServiceDuration"]);
+            exportTables.Add("tblCreate", dataSet.Tables["tblCreate"]);
+            exportTables.Add("tblSoapNotes", dataSet.Tables["tblSoapNotes"]);
+
 
 
             //additional tables if defined 
-            var exportTables = dataSet.Tables.Cast<DataTable>().ToList().Where(q => exportTableNames.Any(a => a == q.TableName));
-            
-            try
+            //var exportTables = dataSet.Tables.Cast<DataTable>().ToList().Where(q => exportTableNames.Any(a => a == q.TableName));
+
+            var clientRefTables = dataSet.Tables.Cast<DataTable>().Where(q => q.Columns.Cast<DataColumn>().Any(q => q.ColumnName == "fldClientID"));
+            foreach (var item in clientRefTables)
             {
-                Assert.Equal(exportTableNames.Count, exportTables.Count());
-            }
-            catch (Xunit.Sdk.EqualException e)
-            {
-                Log.Fatal(e.Message);
-                Log.Verbose(e.StackTrace);
-                Environment.Exit(1);
+                Console.WriteLine(item.TableName);
             }
 
             foreach (var table in exportTables)
             {
-                var filePath = new FileInfo($"{ outputPath.FullName }/{table.TableName}.csv");
-                Log.Information($"Exporting table {table.TableName} to csv {filePath.Name} ");
-                ToCSV(table, filePath.FullName);
+                var filePath = new FileInfo($"{ outputPath.FullName }/{table.Value.TableName}.csv");
+                Log.Information($"Exporting table {table.Value.TableName} to csv {filePath.Name} ");
+                ToCSV(table.Value, filePath.FullName);
          
             }
     
