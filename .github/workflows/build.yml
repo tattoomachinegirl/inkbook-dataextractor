@@ -26,6 +26,12 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - run: dotnet tool install --global dotnet-warp 
+    
     - name: Create Artifact
-      run: dotnet warp --output ./dist/ --rid -p:Version=0.1.0
+      run: dotnet warp ./src/TattooMachineGirl.Inkbook.Data.Extract.csproj --output ./dist/ --rid -p:Version=0.1.0
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: extract.exe
+        path: ./dist
       
