@@ -1,7 +1,19 @@
 # inkbook-dataextractor
 [![Windows Universal](https://github.com/tattoomachinegirl/inkbook-dataextractor/actions/workflows/build.yml/badge.svg)](https://github.com/tattoomachinegirl/inkbook-dataextractor/actions/workflows/build.yml)
 
-To Run this tool 
+## Purpose
+This tool is designed to extract client and appointments for a given employee from inkbook backup files 
+although this is designed for ink book ,  it should theoretically work with other products from Daysmart Software  including 
+
+- 123Pet 
+- Salon Iris
+- Orchid
+- Inkbook
+
+This app was designed for exporting data into other applications for reporting integration and employee offboarding  purposes 
+I am not affiliated with daysmart and software is provided as is 
+
+## To Run this tool 
 
 use the following steps 
 
