@@ -19,7 +19,7 @@ To Run this tool the easiest way is to follw this guide
 
 use the following steps 
 
-Download the latest zip package from Releases page 
+Download the latest zip package from the [Releases page](https://github.com/tattoomachinegirl/inkbook-dataextractor/releases) 
 
 Extract to any directory you wish to work from ,  this will be your working directory for data extraction 
 
