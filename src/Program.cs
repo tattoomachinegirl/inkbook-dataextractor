@@ -15,14 +15,14 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
     {
         public static Logger Log { get; set; }
 
-        static void Main(FileInfo file, DirectoryInfo logDirectory = null, DirectoryInfo outputDirectory = null, LogEventLevel logLevel = LogEventLevel.Information, bool summary = false)
+        static void Main(FileInfo file, DirectoryInfo logDirectory = null, DirectoryInfo output = null, LogEventLevel loglevel = LogEventLevel.Information)
         {
             //Set default file location 
             file ??= new FileInfo("./data.xml");
             logDirectory ??= new DirectoryInfo("./logs");
 
             #region Configure Logger
-            Log = Configuration.SerilogAdapter.GetLogger(logLevel, logDirectory);
+            Log = Configuration.SerilogAdapter.GetLogger(loglevel, logDirectory);
 
             #endregion
             #region Load DataSet
@@ -144,12 +144,12 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
             #endregion
             #region Create Output Directories 
             //create output directory
-            outputDirectory = outputDirectory ?? new DirectoryInfo("./output");
+            output = output ?? new DirectoryInfo("./output");
             DirectoryInfo outputPath = null;
-            if (!outputDirectory.Exists)
+            if (!output.Exists)
             {
-                Log.Verbose($"Base dutput directory {outputDirectory.FullName} does not exist, creating...");
-                outputDirectory.Create();
+                Log.Verbose($"Base dutput directory {output.FullName} does not exist, creating...");
+                output.Create();
                 Log.Verbose($"done.");
 
             }
@@ -157,7 +157,7 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
             Log.Verbose($"Creating output subdirectory for table extraction");
 
             string dir = $"export_{employeeRecord.Field<string>("fldFirstName").ToLower()}_{employeeRecord.Field<string>("fldLastName").ToLower()}_{ DateTime.Now.ToString("MMddyyyy_hh_mm_ss")}";
-            outputPath = outputDirectory.CreateSubdirectory(dir);
+            outputPath = output.CreateSubdirectory(dir);
             Log.Verbose($"Created output directory {outputPath.FullName}");
             #endregion
             #region Write Table Data to csv
@@ -206,18 +206,25 @@ namespace TattooMachineGirl.Inkbook.Data.Extract
         #region Helper Methods 
         public static void ToCSV(DataTable dtDataTable, string strFilePath)
         {
+            var file = new FileInfo(strFilePath);
+            Log.Verbose($"Writing {file.Name}");
             StreamWriter sw = new StreamWriter(strFilePath, false);
-            //headers    
+            //headers
+            Log.Verbose($"Writing {file.Name}: header");
             for (int i = 0; i < dtDataTable.Columns.Count; i++)
             {
+                
+
                 sw.Write(dtDataTable.Columns[i]);
+                Log.Debug($"Writing Column Header {dtDataTable.Columns[i]}");
                 if (i < dtDataTable.Columns.Count - 1)
                 {
                     sw.Write(",");
                 }
             }
+            
             sw.Write(sw.NewLine);
-
+            
 
 
             foreach (DataRow dr in dtDataTable.Rows)
