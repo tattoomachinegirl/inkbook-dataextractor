@@ -1,4 +1,4 @@
-# inkbook-dataextractor
+# Inkbook Data Extractor
 [![Windows Universal](https://github.com/tattoomachinegirl/inkbook-dataextractor/actions/workflows/build.yml/badge.svg)](https://github.com/tattoomachinegirl/inkbook-dataextractor/actions/workflows/build.yml)
 
 ## Purpose
