@@ -27,11 +27,18 @@ jobs:
       run: dotnet test --no-build --verbosity normal
     - run: dotnet tool install --global dotnet-warp 
     
-    - name: Create Artifact
-      run: dotnet warp ./src/TattooMachineGirl.Inkbook.Data.Extract.csproj  --verbose
+    - name: publish x86
+      run: dotnet publish  .\src\TattooMachineGirl.Inkbook.Data.Extract.csproj --output ./dist/win-x86 --runtime win-x86
+    
+    - name: publish x86
+      run: dotnet publish  .\src\TattooMachineGirl.Inkbook.Data.Extract.csproj --output ./dist/win-x64 --runtime win-x64    
     
     - uses: actions/upload-artifact@v2
       with:
-        name: extract.exe
-        path: ./extract.exe
-      
+        name: win-x86
+        path: ./dist/win-x86
+        
+    - uses: actions/upload-artifact@v2
+      with:
+        name: win-x64
+        path: ./dist/win-x86
