@@ -1,0 +1,44 @@
+name: .NET
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore
+      
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+    - run: dotnet tool install --global dotnet-warp 
+    
+    - name: publish x86
+      run: dotnet publish  ./src/TattooMachineGirl.Inkbook.Data.Extract.csproj --output ./dist/win-x86 --runtime win-x86
+    
+    - name: publish x86
+      run: dotnet publish  ./src/TattooMachineGirl.Inkbook.Data.Extract.csproj --output ./dist/win-x64 --runtime win-x64    
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: win-x86
+        path: ./dist/win-x86
+        
+    - uses: actions/upload-artifact@v2
+      with:
+        name: win-x64
+        path: ./dist/win-x86
