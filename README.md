@@ -10,12 +10,12 @@ although this is designed for ink book ,  it should theoretically work with othe
 - Orchid
 - Inkbook
 
-This app was designed for exporting data into other applications for reporting integration and employee offboarding  purposes 
+This app was designed for exporting data into other applications for reporting, integration, ETL and employee offboarding  purposes 
 I am not affiliated with daysmart and software is provided as is 
 
 ## Easy Mode
 
-To Run this tool the easiest way is to follw this guide 
+To Run this tool the easiest way is to follow this guide 
 
 use the following steps 
 
@@ -36,7 +36,9 @@ Download Backup
 
 
 Place downloaaded file in the directory you extracted this tool into 
+
 Rename the file data.xml 
+(an example backup file is included, replace or delete this file)
 
 Run extract.exe 
 
