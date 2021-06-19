@@ -13,7 +13,9 @@ although this is designed for ink book ,  it should theoretically work with othe
 This app was designed for exporting data into other applications for reporting integration and employee offboarding  purposes 
 I am not affiliated with daysmart and software is provided as is 
 
-## To Run this tool 
+## Easy Mode
+
+To Run this tool the easiest way is to follw this guide 
 
 use the following steps 
 
@@ -55,5 +57,22 @@ review and verify the data in excel or any text editor
 
 Import into your favourite database or CRM 
 
+
+## Advanced 
+
+The following options are provide if you wish to run this from the commandd line 
+
+```
+Usage:
+  extract [options]
+
+Options:
+  --file <file>                                               path to backup file
+  --log-directory <log-directory>                             logDirectory [default: ./logs ]
+  --output <output>                                           output [default: ./output ]
+  --loglevel <Debug|Error|Fatal|Information|Verbose|Warning>  loglevel [default: Information]
+  --version                                                   Show version information
+  -?, -h, --help                                              Show help and usage information
+```
 
 
